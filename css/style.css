@@ -10,7 +10,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: block mandatory;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: rgba(135, 168, 235, 0.519);
     color: white;
     text-align: center;
     display: flex;
@@ -40,7 +40,7 @@ header a {
 
 header a:hover {
     background-color: grey;
-    color: red;
+    color: black;
 }
 
 main {
@@ -51,19 +51,30 @@ main {
 
 section {
     scroll-snap-align: center;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     border: solid black;
+    border-radius: 30px;
     padding: 5px;
     width: 80vw;
     height: 80vh;
     margin: 40px auto;
 }
 
+#styleguide {
+    margin-bottom: 100px;
+}
 
+#styleguide img {
+    height: 65vh;
+    width: 65vw;
+}
 
 footer {
     text-align: center;
-    background-color: black;
+    background-color: rgba(131, 101, 57, 0.3);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     margin-top: 20px;
     padding: 10px;
     color: white;
