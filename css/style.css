@@ -39,7 +39,7 @@ header a {
 }
 
 header a:hover {
-    background-color: grey;
+    background-color: lightgrey;
     color: black;
 }
 
@@ -66,7 +66,7 @@ section {
 
 #styleguide img {
     height: 65vh;
-    width: 65vw;
+    width: 50vw;
 }
 
 footer {
@@ -78,4 +78,28 @@ footer {
     margin-top: 20px;
     padding: 10px;
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        scroll-snap-type: none;
+    }
+
+    section {
+        scroll-snap-align: unset;
+        height: 100%;
+    }
+
+    main {
+        display: block;
+    }
+
+    header a {
+        padding: 20px 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+    
 }
